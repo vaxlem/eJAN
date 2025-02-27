@@ -25,7 +25,7 @@ button{
     float: left;
     margin: 10px;
     width: 100px;
-    padding-right: 50px;
+    padding-right: 5px;
     height: 100px;
     position: relative;
     bottom: 46px;
@@ -334,18 +334,7 @@ h1 a{
     text-align: center;
     text-transform: uppercase;
 }
-@media screen  and (min-width: 600px){
-    #brand img{
-        /* float: left;
-        margin: 10px auto;
-        width: 100px; */
-        padding-right: 50px;
-        /* height: 100px;
-        position: relative; */
-        /* bottom: 46px; */
-        /* bottom: 24px; */
-        /* margin-right: 120px; */}
-}
+
 @media screen  and (max-width: 600px){
     #menu{
         height: 60px;
@@ -468,4 +457,16 @@ h1 a{
     #menu ul li .fa{
         padding-left: 15px;
     }
+}
+@media screen  and (min-width: 600px){
+    #brand img{
+        /* float: left;
+        margin: 10px auto;
+        width: 100px; */
+        padding-right: 50px;
+        /* height: 100px;
+        position: relative; */
+        /* bottom: 46px; */
+        /* bottom: 24px; */
+        /* margin-right: 120px; */}
 }
