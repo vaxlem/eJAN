@@ -347,6 +347,16 @@ h1 a{
         /* padding: 10px ; */
         margin: 0px;
     }
+    #brand img{
+    float: left;
+    margin: 10px auto;
+    width: 100px;
+    padding-right: 5px;
+    height: 100px;
+    position: relative;
+    /* bottom: 46px; */
+    bottom: 24px;
+    /* margin-right: 120px; */}
 
     /* #introduction ul li{ */
         /* float: left; */
