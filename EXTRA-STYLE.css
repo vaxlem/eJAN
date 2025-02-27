@@ -14,12 +14,24 @@ body{
 button{  
     /* background: #A751d6; */
     font-size: 15px;}
-#brand img{
+/* #brand img{
     width: 100px;
     padding-right: 50px;
     height: 100px;
     margin-right: 120px;
+} */
+
+#brand img {
+    float: left;
+    margin: 10px;
+    width: 100px;
+    padding-right: 5px;
+    height: 100px;
+    position: relative;
+    bottom: 46px;
+    /* margin-right: 120px; */
 }
+
 #container{
     width: auto;
     /* border: 1px solid red; */
