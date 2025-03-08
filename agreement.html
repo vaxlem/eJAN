@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agreement</title>
+
+    <style>
+        body{background-color: rgb(102, 102, 245);
+            color: rgb(244, 129, 7);
+            text-align: center;
+            font-family: ;
+            
+        }
+    </style>
+</head>
+<body>
+
+<div>
+    <h1> sign here </h1>
+    <!-- <form action=""> write </form> -->
+</div>
+
+<div>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name"><br><br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email"><br><br>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" placeholder="love message here"></textarea><br><br>
+      <input type="submit" value="Submit">
+    </form>
+    
+    </div>
+
+</body>
+</html>
+<!-- 
+ggghh <br>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Signature Scribble</title>
+  <style>
+    #signature-canvas {
+      border: 1px solid #ccc;
+      width: 400px;
+      height: 200px;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="signature-canvas"></canvas> <br>
+  <button id="clear-button">Clear</button>
+
+  <script>
+    const canvas = document.getElementById('signature-canvas');
+    const ctx = canvas.getContext('2d');
+    const clearButton = document.getElementById('clear-button');
+
+    let isDrawing = false;
+    let lastX, lastY;
+
+    canvas.addEventListener('mousedown', (e) => {
+      isDrawing = true;
+      lastX = e.offsetX;
+      lastY = e.offsetY;
+    });
+
+    canvas.addEventListener('mousemove', (e) => {
+      if (isDrawing) {
+        ctx.beginPath();
+        ctx.moveTo(lastX, lastY);
+        ctx.lineTo(e.offsetX, e.offsetY);
+        ctx.stroke();
+        lastX = e.offsetX;
+        lastY = e.offsetY;
+      }
+    });
+
+    canvas.addEventListener('mouseup', () => {
+      isDrawing = false;
+    });
+
+    clearButton.addEventListener('click', () => {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+    });
+  </script>
+</body>
+</html>
+ggghh
+7 vr
+<br>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signature Form</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        form { width: 50%; margin: auto; padding: 20px; border: 1px solid #ccc; border-radius: 10px; background: #f9f9f9; }
+        canvas { border: 2px solid #000; background: #fff; display: block; margin: auto; }
+        button { margin-top: 10px; padding: 10px; }
+    </style>
+</head>
+<body>
+
+    <h2>Signature Form</h2>
+    
+    <form id="signatureForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label>Signature:</label><br>
+        <canvas id="signatureCanvas" width="400" height="200"></canvas><br>
+
+        <button type="button" onclick="clearSignature()">Clear Signature</button>
+        <button type="submit">Submit</button>
+
+        <input type="hidden" id="signatureData" name="signatureData">
+    </form>
+
+    <script>
+        let canvas = document.getElementById("signatureCanvas");
+        let ctx = canvas.getContext("2d");
+        let isDrawing = false;
+
+        canvas.addEventListener("mousedown", (e) => {
+            isDrawing = true;
+            ctx.beginPath();
+            ctx.moveTo(e.offsetX, e.offsetY);
+        });
+
+        canvas.addEventListener("mousemove", (e) => {
+            if (isDrawing) {
+                ctx.lineTo(e.offsetX, e.offsetY);
+                ctx.stroke();
+            }
+        });
+
+        canvas.addEventListener("mouseup", () => isDrawing = false);
+        canvas.addEventListener("mouseleave", () => isDrawing = false);
+
+        function clearSignature() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+        }
+
+        document.getElementById("signatureForm").addEventListener("submit", function (e) {
+            e.preventDefault();
+            let signatureData = canvas.toDataURL("image/png");
+            document.getElementById("signatureData").value = signatureData;
+            alert("Form submitted with signature!");
+            // Here you can send the form data to a server using AJAX or a normal form submission
+        });
+    </script>
+
+</body>
+</html>
+ghddf88
+<br>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signature Form</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        form { width: 50%; margin: auto; padding: 20px; border: 1px solid #ccc; border-radius: 10px; background: #f9f9f9; }
+        canvas { border: 1px solid #ccc; width: 400px; height: 200px; background: #fff; display: block; margin: auto; }
+        button { margin-top: 10px; padding: 10px; }
+    </style>
+</head>
+<body>
+
+    <h2>Signature Form</h2>
+    
+    <form id="signatureForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label>Signature:</label><br>
+        <canvas id="signatureCanvas"></canvas><br>
+
+        <button type="button" id="clearButton">Clear Signature</button>
+        <button type="submit">Submit</button>
+
+        <input type="hidden" id="signatureData" name="signatureData">
+    </form>
+
+    <script>
+        const canvas = document.getElementById('signatureCanvas');
+        const ctx = canvas.getContext('2d');
+        const clearButton = document.getElementById('clearButton');
+
+        let isDrawing = false;
+        let lastX, lastY;
+
+        // Adjust canvas size
+        canvas.width = 400;
+        canvas.height = 200;
+
+        canvas.addEventListener('mousedown', (e) => {
+            isDrawing = true;
+            lastX = e.offsetX;
+            lastY = e.offsetY;
+        });
+
+        canvas.addEventListener('mousemove', (e) => {
+            if (isDrawing) {
+                ctx.beginPath();
+                ctx.moveTo(lastX, lastY);
+                ctx.lineTo(e.offsetX, e.offsetY);
+                ctx.stroke();
+                lastX = e.offsetX;
+                lastY = e.offsetY;
+            }
+        });
+
+        canvas.addEventListener('mouseup', () => isDrawing = false);
+        canvas.addEventListener('mouseleave', () => isDrawing = false);
+
+        clearButton.addEventListener('click', () => {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+        });
+
+        document.getElementById("signatureForm").addEventListener("submit", function (e) {
+            e.preventDefault();
+            let signatureData = canvas.toDataURL("image/png");
+            document.getElementById("signatureData").value = signatureData;
+            alert("Form submitted with signature!");
+            // Here you can send the form data to a server using AJAX or a normal form submission
+        });
+    </script>
+
+</body>
+</html> -->
+
+functional
+<br>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signature Form</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        form { width: 50%; margin: auto; padding: 20px; border: 1px solid #ccc; border-radius: 10px; background: #f9f9f9; }
+        canvas { border: 1px solid #ccc; background: #fff; display: block; margin: auto; }
+        button { margin-top: 10px; padding: 10px; }
+    </style>
+</head>
+<body>
+
+    <h2>Signature Form</h2>
+    
+    <form id="signatureForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label>Signature:</label><br>
+        <canvas id="signatureCanvas"></canvas><br>
+
+        <button type="button" id="clearButton">Clear Signature</button>
+        <button type="submit">Submit</button>
+
+        <input type="hidden" id="signatureData" name="signatureData">
+    </form>
+
+    <script>
+        const canvas = document.getElementById('signatureCanvas');
+        const ctx = canvas.getContext('2d');
+        const clearButton = document.getElementById('clearButton');
+
+        // Set canvas dimensions explicitly
+        canvas.width = 400;
+        canvas.height = 200;
+
+        let isDrawing = false;
+        let lastX = 0;
+        let lastY = 0;
+
+        // Function to start drawing
+        function startDrawing(e) {
+            isDrawing = true;
+            [lastX, lastY] = [e.offsetX, e.offsetY];
+        }
+
+        // Function to draw on the canvas
+        function draw(e) {
+            if (!isDrawing) return;
+            ctx.beginPath();
+            ctx.moveTo(lastX, lastY);
+            ctx.lineTo(e.offsetX, e.offsetY);
+            ctx.strokeStyle = "black";
+            ctx.lineWidth = 2;
+            ctx.stroke();
+            [lastX, lastY] = [e.offsetX, e.offsetY];
+        }
+
+        // Function to stop drawing
+        function stopDrawing() {
+            isDrawing = false;
+        }
+
+        // Mouse event listeners
+        canvas.addEventListener('mousedown', startDrawing);
+        canvas.addEventListener('mousemove', draw);
+        canvas.addEventListener('mouseup', stopDrawing);
+        canvas.addEventListener('mouseleave', stopDrawing);
+
+        // Touch event listeners for mobile support
+        canvas.addEventListener('touchstart', (e) => {
+            e.preventDefault();
+            const touch = e.touches[0];
+            const rect = canvas.getBoundingClientRect();
+            lastX = touch.clientX - rect.left;
+            lastY = touch.clientY - rect.top;
+            isDrawing = true;
+        });
+
+        canvas.addEventListener('touchmove', (e) => {
+            e.preventDefault();
+            if (!isDrawing) return;
+            const touch = e.touches[0];
+            const rect = canvas.getBoundingClientRect();
+            ctx.beginPath();
+            ctx.moveTo(lastX, lastY);
+            ctx.lineTo(touch.clientX - rect.left, touch.clientY - rect.top);
+            ctx.strokeStyle = "black";
+            ctx.lineWidth = 2;
+            ctx.stroke();
+            lastX = touch.clientX - rect.left;
+            lastY = touch.clientY - rect.top;
+        });
+
+        canvas.addEventListener('touchend', () => isDrawing = false);
+
+        // Clear canvas function
+        clearButton.addEventListener('click', () => {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+        });
+
+        // Handle form submission
+        document.getElementById("signatureForm").addEventListener("submit", function (e) {
+            e.preventDefault();
+            let signatureData = canvas.toDataURL("image/png");
+            document.getElementById("signatureData").value = signatureData;
+            alert("Form submitted with signature!");
+            // Submit the form data to a server using AJAX or traditional form submission
+        });
+    </script>
+
+</body>
+</html>
