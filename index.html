@@ -208,3 +208,97 @@
 
 
  
+to c
+<br>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signature Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    form {
+      width: 50%;
+      margin: auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      background: #f9f9f9;
+    }
+    canvas {
+      border: 1px solid #ccc;
+      width: 400px;
+      height: 200px;
+      background: #fff;
+      display: block;
+      margin: auto;
+    }
+    button {
+      margin-top: 10px;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Signature Form</h2>
+  <form id="signatureForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br><br>
+    <label>Signature:</label><br>
+    <canvas id="signatureCanvas"></canvas><br>
+    <button type="button" id="clearButton">Clear Signature</button>
+    <button type="submit">Submit</button>
+    <input type="hidden" id="signatureData" name="signatureData">
+  </form>
+  <script>
+    const canvas = document.getElementById('signatureCanvas');
+    const ctx = canvas.getContext('2d');
+    const clearButton = document.getElementById('clearButton');
+    let isDrawing = false;
+    let lastX, lastY;
+
+    // Adjust canvas size
+    canvas.width = 400;
+    canvas.height = 200;
+
+    canvas.addEventListener('mousedown', (e) => {
+      isDrawing = true;
+      lastX = e.offsetX;
+      lastY = e.offsetY;
+    });
+
+    canvas.addEventListener('mousemove', (e) => {
+      if (isDrawing) {
+        ctx.beginPath();
+        ctx.moveTo(lastX, lastY);
+        ctx.lineTo(e.offsetX, e.offsetY);
+        ctx.stroke();
+        lastX = e.offsetX;
+        lastY = e.offsetY;
+      }
+    });
+
+    canvas.addEventListener('mouseup', () => isDrawing = false);
+    canvas.addEventListener('mouseleave', () => isDrawing = false);
+
+    clearButton.addEventListener('click', () => {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+    });
+
+    document.getElementById("signatureForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+      let signatureData = canvas.toDataURL("image/png");
+      document.getElementById("signatureData").value = signatureData;
+      alert("Form submitted with signature!");
+      // Here you can send the form data to a server using AJAX or a normal form submission
+    });
+  </script>
+</body>
+</html>
+
+
+This code creates a simple signature form with a canvas element where users can draw their signature. The form also includes a clear button to erase the signature and a submit button to send the form data. When the form is submitted, the signature is converted to a PNG image and stored in a hidden input field.
