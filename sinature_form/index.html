@@ -4,18 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signature Form</title>
-    <style>
-        body { font-family: Arial, sans-serif; text-align: center; }
-        canvas { border: 1px solid black; background-color: white; }
-        .container { max-width: 400px; margin: auto; padding: 20px; }
-        
-        /* body{background-color: rgb(102, 102, 245);
+
+    <!-- <style>
+        body{background-color: rgb(102, 102, 245);
             color: rgb(244, 129, 7);
             text-align: center;
             font-family: ;
             
-        } */
+        }
+    </style> -->
 
+
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        canvas { border: 1px solid black; background-color: white; }
+        .container { max-width: 400px; margin: auto; padding: 20px; }
     </style>
 </head>
 <body>
@@ -24,13 +27,21 @@
         <h2>Sign Below</h2>
         <form id="signature-form" action="submit.php" method="POST">
             <input type="text" name="name" placeholder="Your Name" required><br><br>
-            <input type="email" name="email" placeholder="Your Email" required><br><br>
-            
+            <input type="email" name="email" placeholder="Your Email" required>
+            <br><br>
+            <label for="message">Message:</label> 
+            <br>
+            <textarea id="message" name="message" placeholder=" add your love message here"></textarea><br><br>
+
             <canvas id="signatureCanvas" width="300" height="100"></canvas><br>
             <button type="button" onclick="clearCanvas()">Clear</button>
             
+            
+            
             <input type="hidden" name="signature" id="signature">
             <button type="submit">Submit</button>
+            <a href="/index.html"><button style="margin-left: 3rem;"><i class="fa fa-home fontawesome" aria-hidden="true"></i>Back</button></a>
+
         </form>
     </div>
 

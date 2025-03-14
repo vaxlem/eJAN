@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>proposal</title>
+    <title>Proposal</title>
     <link rel="stylesheet" href="./EXTRA-STYLE.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
         
@@ -32,7 +32,7 @@
                 <img src="./images/HEART ICON.png" 
                 alt="">MY PROPOSAL</a></h1>
             </div> 
-<!-- search box     -->
+<!-- search box -->
 <!-- <div id="introduction">
     <div id="searc">
                 <form method="get">
@@ -57,7 +57,7 @@
                 <li id="site"><a href="#sites"><i class="fa fa-mountain fontawesome" aria-hidden="true"></i>Objectives</a></li>
                 <li  id="name"><a href="#names" class="active"><i class="fa fa-list fontawesome" aria-hidden="true"></i>
                     dreams</a></li>
-                <li id="Tel"><a href="tel:(+233)256470448"> <i class="fa fa-phone fontawesome" aria-hidden="true"></i>contact me</a></li>
+                <li id="Tel"><a href="tel:(+233)5079022997"> <i class="fa fa-phone fontawesome" aria-hidden="true"></i>contact me</a></li>
             </ul>
         </div>
 <!-- introduction -->
@@ -72,13 +72,15 @@
               </p> 
               
               <!-- <div id="fullText"> -->
-        <div style='padding-right:6px;'><a href='./images/lovesculpture.jpg'><img img='true' src='./images/lovesculpture.jpg'  alt='proposal'></a></div>  
-                 <!-- <BR></BR> -->dear in the silence of my sleep, my mind hums with the melody of your name.
+        <div style='padding-right:6px;'><a href='./images/lovesculpture.jpg'><img img='true' src='./images/lovesculpture.jpg'  alt='proposal'></a>
+        </div>  
+                 <!-- <BR></BR> -->
+                  dear in the silence of my sleep, my mind hums with the melody of your name.
                    s: Poor diet, lack of exercise, smoking, and excessive drinking.
                     Lorem, ipsum dolor.
             
         </div>
-        <button id="butonEWe" style="color: rgb(226, 233, 122);font-size: 16px;background-color: darksalmon; border-style: hidden;">... Read more</button>
+        <button id="butonEWe" style="color: pink;font-size: 16px;background-color: darksalmon; border-style: hidden;">... Read more</button>
         </div>
 <!-- sidebar -->
       
@@ -106,11 +108,11 @@
         <div id="rightsidebar"class="sidebar">
            <h3>Let's be like this.</h3>
            <div style="margin:0px 0px 10px; text-align: center;">
-            <a href="./agreement.html"><button type="button" onclick="alert('Ok! Proceed. You can sign now to confirm')">yes</button></a>
+            <a href="./sinature_form/index.html"><button type="button" onclick="alert('Ok! Proceed. You can sign now to confirm')">yes</button></a>
             <a href="#"><button type="button" onclick="alert('Oh! Why? Please give me another chance. will you?')">no</button></a>
            </div>
             <div id="tutor" class="container">
-               <div class="row ">
+               <div class="row">
                <a href="./images/love3.jpg"><img src="./images/love3.jpg" alt=""></a></div>
             </div>
         </div>
@@ -203,102 +205,4 @@
   </script>
 </body>
 </html>
-
-																																																																																																																																																																										
-
-
- 
-to c
-<br>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Signature Form</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-    }
-    form {
-      width: 50%;
-      margin: auto;
-      padding: 20px;
-      border: 1px solid #ccc;
-      border-radius: 10px;
-      background: #f9f9f9;
-    }
-    canvas {
-      border: 1px solid #ccc;
-      width: 400px;
-      height: 200px;
-      background: #fff;
-      display: block;
-      margin: auto;
-    }
-    button {
-      margin-top: 10px;
-      padding: 10px;
-    }
-  </style>
-</head>
-<body>
-  <h2>Signature Form</h2>
-  <form id="signatureForm">
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" required><br><br>
-    <label>Signature:</label><br>
-    <canvas id="signatureCanvas"></canvas><br>
-    <button type="button" id="clearButton">Clear Signature</button>
-    <button type="submit">Submit</button>
-    <input type="hidden" id="signatureData" name="signatureData">
-  </form>
-  <script>
-    const canvas = document.getElementById('signatureCanvas');
-    const ctx = canvas.getContext('2d');
-    const clearButton = document.getElementById('clearButton');
-    let isDrawing = false;
-    let lastX, lastY;
-
-    // Adjust canvas size
-    canvas.width = 400;
-    canvas.height = 200;
-
-    canvas.addEventListener('mousedown', (e) => {
-      isDrawing = true;
-      lastX = e.offsetX;
-      lastY = e.offsetY;
-    });
-
-    canvas.addEventListener('mousemove', (e) => {
-      if (isDrawing) {
-        ctx.beginPath();
-        ctx.moveTo(lastX, lastY);
-        ctx.lineTo(e.offsetX, e.offsetY);
-        ctx.stroke();
-        lastX = e.offsetX;
-        lastY = e.offsetY;
-      }
-    });
-
-    canvas.addEventListener('mouseup', () => isDrawing = false);
-    canvas.addEventListener('mouseleave', () => isDrawing = false);
-
-    clearButton.addEventListener('click', () => {
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-    });
-
-    document.getElementById("signatureForm").addEventListener("submit", function (e) {
-      e.preventDefault();
-      let signatureData = canvas.toDataURL("image/png");
-      document.getElementById("signatureData").value = signatureData;
-      alert("Form submitted with signature!");
-      // Here you can send the form data to a server using AJAX or a normal form submission
-    });
-  </script>
-</body>
-</html>
-
-
-This code creates a simple signature form with a canvas element where users can draw their signature. The form also includes a clear button to erase the signature and a submit button to send the form data. When the form is submitted, the signature is converted to a PNG image and stored in a hidden input field.
+																																																																																																																																					

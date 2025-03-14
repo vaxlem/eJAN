@@ -10,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Extract base64 image data
     list($type, $signatureData) = explode(';', $signatureData);
-    list(, $signatureData)      = explode(',', $signatureData);
+    list(, $signatureData) = explode(',', $signatureData);
     $signatureData = base64_decode($signatureData);
     $signatureFile = "signature.png";
 
