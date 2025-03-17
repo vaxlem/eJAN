@@ -2,6 +2,8 @@ body{
     font: Arial, Helvetica, Sans-serif;
     /* background: #000; */
     /* background: url(./images/lovedesign.jpg) no-repeat center ; */
+    /* background: url(./images/u\ n\ i\ 2.jpg) no-repeat center ; */
+
 /* mamHermon bg */
     background: url(./images/love.jpg) no-repeat center ;
     /* background-image: url(./images/love3.jpg) no-repeat center; */
@@ -38,7 +40,12 @@ img[img]{
     /* margin: 0 3rem; */
     
 }
-
+img[img1]{
+    width:130px;
+    height:100px;
+    /* margin: 0 3rem; */
+    
+}
 #container{
     width: auto;
     /* border: 1px solid red; */
@@ -271,6 +278,21 @@ h1 a{
     line-height: 50px;
 
 }
+
+/* lets be this */
+.sidebar h3[uni]{
+    /* color: red; */
+    color: pink;
+    background-color: black;
+    /* background-color: greenyellow; */
+    border-radius: 5px;
+    padding: 0 0 0 20px;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 50px;
+    text-align: center;
+
+}
 /* transitions */
 .sidebar ul li a:hover, .sidebar ul li a.active{
     text-decoration: none;
@@ -407,6 +429,7 @@ h1 a{
     }
   
     /* active list */
+
     #introduct ul li a:hover, #introduct ul li a.active{
         font-size: 1rem;
         /* color: rgba(0, 0, 0, 0.55) ; */
@@ -428,7 +451,9 @@ h1 a{
     /* transitions */
 .sidebar ul li a:hover, .sidebar ul li a.active{
     text-decoration: none;
-    color: #5d12e7;
+    background-color: #dada11;
+    color: #dada11;
+    color: #D62AD0;
     font-size: 20px;
     font-weight: 500px;
    }
@@ -476,4 +501,7 @@ h1 a{
         /* bottom: 46px; */
         /* bottom: 24px; */
         /* margin-right: 120px; */}
+
+        /* #introduct ul li{color: #FB7AFC} */
+
 }
