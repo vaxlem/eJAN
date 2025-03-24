@@ -1,11 +1,11 @@
 body{
     font: Arial, Helvetica, Sans-serif;
     /* background: #000; */
-    /* background: url(./images/lovedesign.jpg) no-repeat center ; */
+    background: url(./images/lovedesign.jpg) no-repeat center ;
     /* background: url(./images/u\ n\ i\ 2.jpg) no-repeat center ; */
 
 /* mamHermon bg */
-    background: url(./images/love.jpg) no-repeat center ;
+    /* background: url(./images/love.jpg) no-repeat center ; */
     /* background-image: url(./images/love3.jpg) no-repeat center; */
     background-attachment: fixed;
     background-size: cover;
@@ -293,6 +293,7 @@ h1 a{
     text-align: center;
 
 }
+/* #sites #clan1 #names{color: pink;} */
 /* transitions */
 .sidebar ul li a:hover, .sidebar ul li a.active{
     text-decoration: none;
@@ -442,11 +443,15 @@ h1 a{
     .sidebar ul li a, .sidebar ul li a.active{
         text-decoration: none;
         color: #5d12e7;
-        color: beige;
+        /* color: beige;
+        color: pink; */
+        background-image: linear-gradient(red, yellow, green);
+border-radius: 8px 30px 1px;
+padding: 13px 10px;
 
         font-size: 15px;
         /* font-weight: 300px; */
-        font-weight: 500px;
+        font-weight: 800px;
        }
     /* transitions */
 .sidebar ul li a:hover, .sidebar ul li a.active{
