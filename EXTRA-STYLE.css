@@ -218,6 +218,20 @@ h1 a{
     text-align: center;
 }
 
+h2{text-align: center;}
+
+/* QOUTE */
+.qoute{
+    border: #dada11; 
+    border-color: #dada11; 
+    border-width: 15px;
+    border-radius: 3px 40px 10px 20px;
+    border-style: dotted;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 2px 3px 6px red ;
+    /* box-shadow: #4c10a5; */
+}
 #introduction p{
     font-size: 25px;
     /* color: #5d12e7; */
