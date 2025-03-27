@@ -27,9 +27,13 @@ button {
     width: 50%;
     /* height: 50px; */
     background: #a751d675;
+    background-color: #F60C86;
+
     font-size: 15px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     cursor: pointer;
     text-decoration: none;
 }
-a{text-decoration: none;}
+a{text-decoration: none;
+    color: #FFF6A2;
+}
