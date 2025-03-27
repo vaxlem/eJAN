@@ -1,0 +1,33 @@
+body{
+    font: Arial, Helvetica, Sans-serif;
+    /* background: #000; */
+    /* background: url(./images/lovedesign.jpg) no-repeat center ; */
+    /* background: url(./images/u\ n\ i\ 2.jpg) no-repeat center ; */
+
+/* mamHermon bg */
+    /* background: url(./images/love.jpg) no-repeat center ; */
+    /* background-image: url(./images/love3.jpg) no-repeat center; */
+    background-attachment: fixed;
+    background-size: cover;
+    /* background-image:linear-gradient(90deg,red,blue,yellow); */
+
+}
+
+.class{ 
+    text-align: center;
+    
+    margin: 80px auto;
+}
+
+button{
+    padding: 50px;
+    box-shadow:3px 4px 6px rgb(110, 102, 102);
+    border-radius: 1rem;
+    width: 50%;
+    height: 50px;
+    background: #a751d675;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    
+}
