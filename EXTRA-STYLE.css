@@ -63,7 +63,7 @@ body{
     }
     
     .image-grid img {
-        width: 100%;
+        width:fit-content;
         height: 150px;
         object-fit:contain;
     }
