@@ -20,7 +20,7 @@ body{
 
 .flex-container > div {
   background-color: #f1f1f1;
-  margin: 2px;
+  margin: 3px;
   padding: 2px;
   font-size: 30px;
 }
