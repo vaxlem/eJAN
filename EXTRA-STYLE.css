@@ -66,6 +66,7 @@ body{
         width:fit-content;
         height: 150px;
         object-fit:contain;
+        padding: 5px;
     }
 
 button{  
