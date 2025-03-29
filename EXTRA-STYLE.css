@@ -20,8 +20,8 @@ body{
 
 .flex-container > div {
   background-color: #f1f1f1;
-  margin: 10px;
-  padding: 5px;
+  margin: 5px;
+  padding: 2px;
   font-size: 30px;
 }
 .goTop{
