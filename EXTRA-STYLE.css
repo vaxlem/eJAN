@@ -16,11 +16,12 @@ body{
 .flex-container {
   display: flex;
   background-color: DodgerBlue;
+  padding: 0px 2px;
 }
 
 .flex-container > div {
   background-color: #f1f1f1;
-  margin: 3px;
+  margin: 4px;
   padding: 2px;
   font-size: 30px;
 }
