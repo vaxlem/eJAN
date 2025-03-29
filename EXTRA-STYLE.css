@@ -16,7 +16,7 @@ body{
 .flex-container {
   display: flex;
   background-color: DodgerBlue;
-  padding: 0px 2px;
+  padding: 0px 5px;
 }
 
 .flex-container > div {
