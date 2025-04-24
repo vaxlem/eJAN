@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Image Alert</title>
+  <style>
+    #customAlert {
+      display: none;
+      position: fixed;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: white;
+      border: 2px solid #444;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      text-align: center;
+      z-index: 1000;
+      border-radius: 12px;
+    }
+    #customAlert img {
+      max-width: 150px;
+      height: auto;
+      margin-bottom: 15px;
+    }
+    #customAlert button {
+      margin-top: 10px;
+      padding: 6px 12px;
+      border: none;
+      background: #007bff;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<button onclick="showAlert()">Show Alert</button>
+
+<div id="customAlert">
+  <img src="./images/j13.jpg" alt="Alert Image"> <!-- Replace with your image path -->
+  <p>This is your custom alert text!</p>
+  <button onclick="closeAlert()">OK</button>
+</div>
+
+<script>
+  function showAlert() {
+    document.getElementById('customAlert').style.display = 'block';
+  }
+
+  function closeAlert() {
+    document.getElementById('customAlert').style.display = 'none';
+  }
+</script>
+
+</body>
+</html>
