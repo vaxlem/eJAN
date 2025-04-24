@@ -1,76 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Proposal</title>
+    <!-- <link rel="stylesheet" href="./EXTRA-STYLE.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        
+    <link rel="icon" href="./images/HEART ICON.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
     <style>
+      .modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
       
+      .modal-content {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+      
+        max-width:90%;
+        max-height: 90vh;
+        overflow-y: auto;
+      
+      }
+      
+      .close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 24px;
+        cursor: pointer;
+      }
+      @media  (max-width:768px){
+          .modal-content,#showImage{
+              padding: 10px;
+              max-width:66%;
+              max-height: 82vh;
+      
+             position: fixed; 
+             top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            border: 2px solid #444;
+            /* padding: 20px; */
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            text-align: center;
+            z-index: 1000;
+            border-radius: 12px;
+          }
+          #modalImage{
+            max-width: 350px;
+            height: 50vh;
+            margin-bottom: 15px;
+          }
+          #showImage{
+          
+            z-index: -1000; 
+           
+          }
+      
+      }
+          
+      
+</style>
 
-.modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-.modal-content {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+ <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-F02K9DJ88C"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-  max-width:90%;
-  max-height: 90vh;
-  overflow-y: auto;
+  gtag('config', 'G-F02K9DJ88C');
+</script>   
 
-}
-
-.close {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  font-size: 24px;
-  cursor: pointer;
-}
-@media  (max-width:768px){
-    .modal-content,#showImage{
-        padding: 10px;
-        max-width:66%;
-        max-height: 82vh;
-
-       position: fixed; 
-       top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background: white;
-      border: 2px solid #444;
-      /* padding: 20px; */
-      box-shadow: 0 0 10px rgba(0,0,0,0.5);
-      text-align: center;
-      z-index: 1000;
-      border-radius: 12px;
-    }
-    #modalImage{
-      max-width: 350px;
-      height: 50vh;
-      margin-bottom: 15px;
-    }
-    #showImage{
-    
-      z-index: -1000; 
-     
-    }
-
-}
-    
-
-    </style>
+  
 </head>
 <body>
    
