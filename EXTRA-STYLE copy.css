@@ -1,0 +1,591 @@
+body{
+    font: Arial, Helvetica, Sans-serif;
+    /* background: #000; */
+    /* background: url(./images/pearl.jpg) no-repeat center ; */
+
+    background: url(./images/lovedesign.jpg) no-repeat center ;
+    background: url(./images/u\ n\ i\ 2.jpg) no-repeat center ;
+
+/* mamHermon bg */
+    /* background: url(./images/love.jpg) no-repeat center ; */
+    /* background-image: url(./images/love3.jpg) no-repeat center; */
+    background-attachment: fixed;
+    background-size: cover;
+    /* background-image:linear-gradient(90deg,red,blue,yellow); */
+
+}
+
+.flex-container {
+  display: flex;
+  background-color: DodgerBlue;
+  padding: 0px 5px;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  margin: 4px;
+  padding: 2px;
+  font-size: 30px;
+}
+.goTop{
+    /* background-color: #007BFF;
+    background-color: #f30;
+    color: whitesmoke;
+    color: #007BFF;
+    text-align: center;
+    padding: 12px;
+    font-size: 16px;
+    border: #9933cc;
+    border-radius: 8px;
+    cursor: pointer;
+    animation: bounce 2s infinite; */
+
+
+    text-decoration: none;  color: #d62AD0; color: rgba(40, 20, 20, 0.975); float: right;
+    border-radius:30px; 
+    padding: 0px 10px; 
+    background-color: #FB7AFC; 
+                 
+    background-image:linear-gradient(90deg,red,rgba(0, 0, 255, 0.361),yellow);
+    cursor: pointer;
+    animation: bounce 2s infinite; 
+                 
+}
+
+@keyframes bounce{0%, 20%, 50%, 80%, 100%{
+    transform: translateY(0);}
+    40%{transform: translateY(-30px);}
+    60%{transform: translateY(-15px);}}
+
+
+    .image-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    
+    .image-grid img{
+        width:100%;
+        height: 150px;
+        object-fit:contain;
+        padding:0pyx 5px;
+    }
+    .toU{
+        width:100%;
+        height:auto;
+        object-fit:cover;
+    }
+
+button{  
+    /* background: #A751d6; */
+    font-size: 15px;}
+/* #brand img{
+    width: 100px;
+    padding-right: 50px;
+    height: 100px;
+    margin-right: 120px;
+} */
+
+#brand img {
+    float: left;
+    margin: 10px;
+    width: 100px;
+    padding-right: 5px;
+    height: 100px;
+    position: relative;
+    bottom: 46px;
+    /* margin-right: 120px; */
+}
+
+img[img]{
+    width:100px;
+    height:100px;
+    /* margin: 0 3rem; */
+    
+}
+img[img1]{
+    width:130px;
+    height:100px;
+    /* margin: 0 3rem; */
+    
+}
+#container{
+    width: auto;
+    /* border: 1px solid red; */
+    height: auto;
+    margin: 0 5rem;
+    flex-wrap: wrap;
+}
+h1 a{
+    font-size: 2rem;
+    font-weight: 100px;
+    color: white;
+    text-decoration: none;
+    
+}
+
+#header
+{
+    height: 100px;
+    padding: 10px 0px;
+}
+#brand{
+    float: left;
+}
+#brand img{
+    float:left;
+    margin: 10px auto;
+
+
+    width: 100px;
+    padding-right: 50px;
+    height: 100px;
+    position: relative;
+    bottom: 46px;
+    /* margin-right: 120px; */
+}
+#search{
+    float: right ;
+    background: linear-gradient( #b7e953, yellow);
+    background: -webkit-linear-gradient( #b7e953, yellow);
+    background: -o-linear-gradient( #b7e953, yellow);
+    background: -moz-linear-gradient( #b7e953, yellow);
+
+    width: 400px;
+    height: 50px;
+    padding: 20px 20px 0 20px;
+    margin-top:40px ;
+
+}
+.text {
+    float: left;
+    width: 150px;
+    padding: 5px;
+    font-size: 15px;
+    color: green;
+    background: white url(./image/cimyiom\ .PNG) right center no-repeat;
+    
+}
+.submit{
+    float: right;
+    padding: 5px;
+    font-weight: bold;
+    color: white;
+    background: #A751d6;
+    font-size: 15px;
+
+}
+
+/* end of search */
+.clear{
+    clear: both;
+}
+#introduct{
+    background: linear-gradient(red, rgba(255, 255, 255, 0.45));
+    background: -webkit-linear-gradient(red, rgba(255, 255, 255, 0.45));
+    background: -o-linear-gradient(red, rgba(255, 255, 255, 0.45));
+    background: -moz-linear-gradient(red, rgba(255, 255, 255, 0.45));
+    padding: 10px;
+    margin: 16px 0;
+    height: 190px;
+
+}
+#menu{
+    height: 70px;
+    background: linear-gradient( #b7e953, red);
+    background: -webkit-linear-gradient( #b7e953, red);
+    background: -o-linear-gradient( #b7e953, red);
+    background: -moz-linear-gradient( #b7e953, red);
+
+    padding: 30px 0px;
+}
+
+#introduct ul{
+    list-style: none;
+    padding: 0;
+
+}
+/* #menu ul li{ */
+
+#introduct ul li{
+    float: left;
+    padding: 0 30px;
+    height: 20px;
+    border-right:1px solid #5d12e7;
+    text-align: justify;
+
+}
+
+/* #menu ul li:last-child{
+    border-right: none;
+} */
+#introduct ul li:last-child{
+    border-right: none;
+}
+/* #menu ul li a{ */
+#introduct ul li a{
+    text-decoration: none;
+    text-transform:capitalize;
+    font-size: 1.5rem;
+    /* color:rgba(255, 255, 255, 0.997) ; */
+    color: #5d12e7;
+    /* color: beige; */
+    /* padding: 10px; */
+    line-height: 30px;
+
+}
+/* transition */
+#introduct ul li a{
+    /* #menu ul li a{ */
+    transition: font-size 0.5s ease;
+    -moz-transition: font-size 0.5s ease;
+    -o-transition: font-size 0.5s ease;
+    -ms-transition: font-size 0.5s ease;
+    -webkit-transistion: font-size 0.5s ease;
+
+}
+/* active list */
+/* #menu ul li a:hover, #menu ul li a.active{ */
+
+#introduct ul li a:hover, #introduct ul li a.active{
+    font-size: 2rem;
+    /* color: rgba(0, 0, 0, 0.55) ; */
+    color: azure;
+    text-transform: uppercase;
+    font-weight: bold;
+    /* transition:linear 0.3s ease; */
+}
+/* fontawesomes */
+.fontawesome{
+    padding-right:10px;
+}
+
+.clear{
+    clear: both;
+}
+
+/* introduction */
+#introduction{
+    background: linear-gradient(red, rgba(255, 255, 255, 0.45));
+    background: -webkit-linear-gradient(red, rgba(255, 255, 255, 0.45));
+    background: -o-linear-gradient(red, rgba(255, 255, 255, 0.45));
+    background: -moz-linear-gradient(red, rgba(255, 255, 255, 0.45));
+    padding: 30px;
+    margin: 16px 0;
+}
+
+#introduction h3{
+    font-size: 40px;
+    color: #efebf5;
+    /* font-weight: normal; */
+    text-align: center;
+}
+
+h2{text-align: center;}
+
+/* QOUTE */
+.qoute{
+    border: #dada11; 
+    border-color: #dada11; 
+    border-width: 15px;
+    border-radius: 3px 40px 10px 20px;
+    border-style: dotted;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 2px 3px 6px red ;
+    /* box-shadow: #4c10a5; */
+}
+#introduction p{
+    font-size: 25px;
+    /* color: #5d12e7; */
+    color: black;
+    text-align: justify;
+}
+
+/* CiMYIOM color */
+.cimyiom{
+    color: white;
+}
+/* sidebar */
+
+.sidebar{
+    /* float: right; */
+    width: 500px;
+    height: 450px;
+    border: 1px solid red;
+    border-radius: 1rem ;
+    margin-top: 1rem;
+    padding: 10px 30px;
+}
+
+#leftsidebar {
+    float: left;
+    width: auto;
+    height: auto;
+    
+    
+
+}
+
+#rightsidebar{
+    float: right;
+    width: auto;
+    height: auto;
+  
+}
+/* leftsidebar */
+#leftsidebar ul li {
+    padding: 2px;
+    list-style-image: url(./image/cimyiom\ .PNG);
+}
+#leftsidebar ul li,a{
+    padding: 10px 10px 10px 0px;
+    margin-top: 5px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.sidebar h3{
+    color: red;
+    background-color: black;
+    border-radius: 5px;
+    padding: 0 0 0 20px;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 50px;
+
+}
+
+/* lets be this */
+.sidebar h3[uni]{
+    /* color: red; */
+    color: pink;
+    background-color: black;
+    /* background-color: greenyellow; */
+    border-radius: 5px;
+    padding: 0 0 0 20px;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 50px;
+    text-align: center;
+
+}
+/* #sites #clan1 #names{color: pink;} */
+/* transitions */
+.sidebar ul li a:hover, .sidebar ul li a.active{
+    text-decoration: none;
+    color: #5d12e7;
+    color: beige;
+    font-size: 37px;
+    font-weight: 500px;
+    transition: font-size 0.5s ease;
+    -moz-transition: font-size 0.5s ease;
+    -o-transition: font-size 0.5s ease;
+    -ms-transition: font-size 0.5s ease;
+    -webkit-transition: font-size 0.5s ease;
+
+}
+
+/* right sidebar */
+#rightsidebar ul li{
+    padding-bottom: 6px;
+    padding-left:20px;
+    margin-top:15px;
+    /* list-style-image: url(./image/cimyiom\ .PNG); */
+    background: url(./image/cimyiom\ .PNG) no-repeat left center;
+}
+#rightsidebar .row img{
+    width: 250px;
+    height: auto;
+}
+/* footer */
+.footer{
+    /* height: 60px; */
+    height: auto;
+    z-index: 1000;
+    background: linear-gradient(#f6f390, #d5d533);
+    box-shadow: 2px 3px 2px rgb(220, 213, 213);
+    padding: 10px 30px;
+    margin: 15px 0 0 0;
+    text-align: center;
+}
+
+/* tutor */
+.container{
+    display:inline-block;
+    width: auto;
+    height: auto;
+}
+#tutor .col-3{
+    width: 50px;
+    /* height: 40px; */
+    border: 1px solid green;
+    float: left;
+    box-shadow: 1px 1px 2px 2px green;
+    z-index: 1;
+    padding: 20px;
+    border-radius: 3rem;
+}
+.row{
+    height: 250px;
+    /* background: linear-gradient(rgba(0, 128, 0, 0.044), #d53389);
+    box-shadow: 2px 3px 2px rgb(220, 213, 213);
+    padding: 10px 30px;
+    margin: 15px 0 0 0;
+    text-align: center; */
+    /* border: 1px solid green; */
+    background-color: pink;
+}
+
+.col{
+    padding: 30px;
+    margin: 15px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+@media screen  and (max-width: 600px){
+    #menu{
+        height: 60px;
+        width: 377px;
+        background: linear-gradient( #b7e953, red);
+        background: -webkit-linear-gradient( #b7e953, red);
+        background: -o-linear-gradient( #b7e953, red);
+        background: -moz-linear-gradient( #b7e953, red);
+    text-align: justify;
+        /* padding: 10px ; */
+        margin: 0px;
+    }
+    #brand img{
+    float: left;
+    margin: 10px auto;
+    width: 100px;
+    padding-right: 5px;
+    height: 100px;
+    position: relative;
+    /* bottom: 46px; */
+    bottom: 24px;
+    /* margin-right: 120px; */}
+
+    /* #introduction ul li{ */
+        /* float: left; */
+        /* margin: 20px auto; */
+        /* text-align: justify; */
+        /* padding: 0 30px;
+        height: 20px;
+        border-right:1px solid #5d12e7; */
+        
+    /* } */
+    #introduct ul li{
+        /* float: left; */
+        padding: 0 0;
+        height: auto;
+        border-right:1px solid #5d12e7;
+        margin: 20px auto;
+        
+    }
+    /* #introduction ul li{
+        float: left;
+        padding: 0 0;
+        height:20 auto;
+        border-right:1px solid #5d12e7;
+        
+    } */
+    
+    #introduct ul li:last-child{
+        border-right: none;
+    }
+    
+    #introduct ul li a, ul li a:active{
+        text-decoration: none;
+        text-transform:capitalize;
+        font-size: 0.9rem;
+        /* color:rgba(255, 255, 255, 0.997) ; */
+        color: #5d12e7;
+        /* padding: 10px; */
+        line-height: 30px;
+        margin-left: 10px;
+    
+    }
+  
+    /* active list */
+
+    #introduct ul li a:hover, #introduct ul li a.active{
+        font-size: 1rem;
+        /* color: rgba(0, 0, 0, 0.55) ; */
+        color: azure;
+        text-transform: uppercase;
+        font-weight: bold;
+        /* transition:linear 0.3s ease; */
+    }
+
+    .sidebar ul li a, .sidebar ul li a.active{
+        text-decoration: none;
+        color: #5d12e7;
+        /* color: beige;
+        color: pink; */
+        background-image: linear-gradient(red, yellow, green);
+border-radius: 8px 30px 1px;
+padding: 13px 10px;
+
+        font-size: 15px;
+        /* font-weight: 300px; */
+        font-weight: 800px;
+       }
+    /* transitions */
+.sidebar ul li a:hover, .sidebar ul li a.active{
+    text-decoration: none;
+    background-color: #dada11;
+    color: #dada11;
+    color: #D62AD0;
+    font-size: 20px;
+    font-weight: 500px;
+   }
+    #container{
+        width: auto;
+        /* border: 1px solid red; */
+        height: auto;
+        margin: 0 1rem;
+        flex-wrap: wrap;
+    }
+    #search{
+        width: 337px;
+        height: 50px;
+        padding: 20px 20px 0 20px;
+        margin-top:40px ;
+        /* font-size: 10px; */
+    
+    }
+    .text {
+        float: left;
+        width: 110px;
+        padding: 5px 0;
+        font-size: 11px;
+        color: green;
+        background: white url(./image/cimyiom\ .PNG) right center no-repeat;
+        
+    }.submit{
+        width: 90px;
+        font-size: 11px;
+        padding: 5px 0;
+        margin: 0;
+    }
+    #menu ul li .fa{
+        padding-left: 15px;
+    }
+}
+@media screen  and (min-width: 600px){
+    #brand img{
+        /* float: left;
+        margin: 10px auto;
+        width: 100px; */
+        padding-right: 50px;
+        /* height: 100px;
+        position: relative; */
+        /* bottom: 46px; */
+        /* bottom: 24px; */
+        /* margin-right: 120px; */}
+
+        /* #introduct ul li{color: #FB7AFC} */
+
+}

@@ -1,31 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proposal</title>
-    <link rel="stylesheet" href="./EXTRA-STYLE.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-        
-    <link rel="icon" href="./images/HEART ICON.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    
- <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-F02K9DJ88C"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <meta charset="utf-8">
+  <title>Protected Website</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <title>Proposal</title>
+  <link rel="stylesheet" href="./EXTRA-STYLE copy.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+      
+  <link rel="icon" href="./images/HEART ICON.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <style>
+    body{ 
+    font: Arial, Helvetica, Sans-serif;
+    /* background: #000; */
+    /* background: url(./images/pearl.jpg) no-repeat center; */
 
-  gtag('config', 'G-F02K9DJ88C');
-</script>   
+    /* background: url(./images/lovedesign.jpg) no-repeat center ; */
+    /* background: url(./images/u\ n\ i\ 2.jpg) no-repeat center ; */
+
+/* mamHermon bg */
+    /* background: url(./images/love.jpg) no-repeat center ; */
+    /* background-image: url(./images/love3.jpg) no-repeat center; */
+    background-attachment: fixed;
+    background-size: cover;
+    /* background-image:linear-gradient(90deg,red,blue,yellow); */
+
+}
+
+  </style>
 </head>
 <body>
-    
 
+  <!-- Password prompt -->
+  <div id="passwordPrompt" style="text-align: center; background-color: #fff; height: 200px; padding: 10%; border-radius: 50px;">
+    <h1>To You I come, my Queennette!</h1>
+    <label for="passwordField">Enter the <strong>special</strong> name I call for you: </label>
+    <div style="position: relative; margin-top: 20px;">
+      <input type="password" id="passwordField">
+      <span class="togglePassword" onclick="togglePasswordVisibility()">
+        <i class="fas fa-eye"></i>
+      </span>
+    </div>
+    <button onclick="checkPassword()" style="margin-top: 1rem;">Submit</button>
+    <p id="passwordError" style="display: none; color: red;">Incorrect password. Try again.<br> Hint!  <strong>Your Pet-Name </strong> (in small letters) <strong>[**********]</strong></p>
+  </div>
+
+  <!-- Main content (hidden by default) -->
+  <div id="mainContent" style="display: none; text-align: center; font: Arial, Helvetica, Sans-serif;
+  /* background: #000; */
+  background: url(./images/pearl.jpg) no-repeat center ;
+
+  /* background: url(./images/lovedesign.jpg) no-repeat center ; */
+  /* background: url(./images/u\ n\ i\ 2.jpg) no-repeat center ; */
+
+/* mamHermon bg */
+  /* background: url(./images/love.jpg) no-repeat center ; */
+  /* background-image: url(./images/love3.jpg) no-repeat center; */
+  background-attachment: fixed;
+  background-size: cover;
+  /* background-image:linear-gradient(90deg,red,blue,yellow); */
+">
+    <!-- <h1>Main Content</h1>
+    <p>This is the main content of the website. It is protected by a password.</p>
+  
+   -->
+  <!-- try -->
     <div id="container">
         <div id="header">
             <div id="brand">
@@ -111,7 +154,7 @@
                 <li id="reason1"> <a href="#"><i class="fa fa-paperclip fontawesome" aria-hidden="true"></i> Reasons</a></li>
                 <li id="objectives"> <a href="#"><i class="fa fa-list fontawesome" aria-hidden="true"></i> Objectives</a></li>
                 <li id="dreams"> <a href="#"><i class="fa fa-mountain fontawesome" aria-hidden="true"></i> My Dreams</a></li><BR></BR>
-                 <a class="goTop"  href="#">Select from top menu</a>
+                 <a class="goTop"  href="#">go to top</a>
                 <!-- <li> <a href="#">level 7-JHS Lessons</a></li>
                 <li> <a href="#">level 9-JHS Lessons</a></li><BR></BR>
                 <li> <a href="#">level 10-SHS1 Lessons</a></li>
@@ -164,9 +207,10 @@
 
   <a href="./images/g.jpg"><div><img src='./image/f9.jpg' width='100' alt=''></div></a>
 
-</div
+</div>
 
     </div>
+</div>
  <!-- script -->
  <script>
     document.getElementById("reason").onclick = function(){
@@ -284,9 +328,48 @@
     
     </script>
     <!-- java -->
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
       alert("To You I come, my Queennette!");
+  </script> -->
+
+
+  <script>
+    const password = "queennette";
+
+    function checkPassword() {
+      const enteredPassword = document.getElementById("passwordField").value;
+      if (enteredPassword === password) {
+        // If the entered password is correct, show the main content
+        document.getElementById("passwordPrompt").style.display = "none";
+        document.getElementById("mainContent").style.display = "block";
+      } else {
+        // If the entered password is incorrect, show an error message
+        document.getElementById("passwordError").style.display = "block";
+      }
+    }
+
+    function togglePasswordVisibility() {
+      const passwordField = document.getElementById("passwordField");
+      const icon = document.querySelector(".togglePassword i");
+
+      if (passwordField.type === "password") {
+        passwordField.type = "text";
+        icon.classList.remove("fa-eye");
+        icon.classList.add("fa-eye-slash");
+      } else {
+        passwordField.type = "password";
+        icon.classList.remove("fa-eye-slash");
+        icon.classList.add("fa-eye");
+      }
+    }
+
+    // Handle Enter key press on the password input field
+    document.getElementById("passwordField").addEventListener("keypress", function(event) {
+      if (event.key === "Enter") {
+        checkPassword();
+      }
+    });
   </script>
+
 </body>
 </html>
-																																																																																																																																					
